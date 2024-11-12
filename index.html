@@ -9,24 +9,46 @@
 <body>
     <div class="container">
         <h2>Chat App</h2>
-        <div class="form-container">
-            <input type="text" id="firstName" placeholder="First Name" required>
-            <input type="text" id="lastName" placeholder="Last Name" required>
+
+        <!-- صفحة التسجيل أو تسجيل الدخول -->
+        <div id="loginPage">
+            <h3>Login or Create Account</h3>
             <input type="email" id="email" placeholder="Email" required>
             <input type="password" id="password" placeholder="Password" required>
-            <button id="signupButton">Create Account</button>
             <button id="loginButton">Login</button>
+            <button id="signupButton">Create Account</button>
+            <p id="statusMessage"></p>
         </div>
-        <p id="statusMessage"></p>
 
-        <div id="searchContainer" class="hidden">
-            <input type="text" id="searchFriend" placeholder="Search for friends" />
+        <!-- صفحة إنشاء الحساب -->
+        <div id="signupPage" class="hidden">
+            <h3>Create Account</h3>
+            <input type="text" id="firstName" placeholder="First Name" required>
+            <input type="text" id="lastName" placeholder="Last Name" required>
+            <input type="email" id="newEmail" placeholder="Email" required>
+            <input type="password" id="newPassword" placeholder="Password" required>
+            <button id="createAccountButton">Create Account</button>
+        </div>
+
+        <!-- صفحة البحث عن الأصدقاء -->
+        <div id="searchPage" class="hidden">
+            <h3>Search for Friends</h3>
+            <input type="text" id="friendName" placeholder="Enter friend's name" required>
             <button id="searchButton">Search</button>
+            <div id="friendResults"></div>
         </div>
 
-        <div id="chatContainer" class="hidden">
+        <!-- صفحة عرض طلبات الصداقة -->
+        <div id="friendRequestsPage" class="hidden">
+            <h3>Friend Requests</h3>
+            <div id="friendRequests"></div>
+        </div>
+
+        <!-- صفحة الدردشة -->
+        <div id="chatPage" class="hidden">
+            <h3>Chat with Friend</h3>
             <div id="messages"></div>
-            <input type="text" id="messageInput" placeholder="Type your message">
+            <input type="text" id="messageInput" placeholder="Type your message" required>
             <button id="sendButton">Send</button>
         </div>
     </div>
@@ -36,7 +58,7 @@
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
     
-    <!-- Include the main script -->
+    <!-- Include the main script file -->
     <script src="main.js"></script>
 </body>
 </html>

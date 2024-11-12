@@ -1,125 +1,41 @@
-/* General Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
 body {
-    background: linear-gradient(to right, #6a11cb, #2575fc);
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #2c3e50;
     color: white;
-}
-
-.container {
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 30px;
-    border-radius: 10px;
-    width: 100%;
-    max-width: 400px;
     text-align: center;
 }
 
-/* Form container */
-.form-container input {
-    width: 80%;
-    padding: 12px;
-    margin: 10px 0;
-    border: 2px solid #ddd;
-    border-radius: 5px;
-    background: #333;
-    color: white;
-    font-size: 16px;
+.container {
+    margin: 50px auto;
+    max-width: 600px;
+    background-color: #34495e;
+    padding: 20px;
+    border-radius: 10px;
 }
 
-.form-container button {
-    width: 80%;
-    padding: 12px;
-    margin: 10px 0;
+button {
+    background-color: #3498db;
     border: none;
-    border-radius: 5px;
-    background-color: #2575fc;
-    color: white;
-    font-size: 16px;
+    padding: 10px 20px;
+    margin-top: 10px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
-.form-container button:hover {
-    background-color: #6a11cb;
+button:hover {
+    background-color: #2980b9;
 }
 
-/* Chat container */
-#chatContainer {
-    margin-top: 20px;
-}
-
-#messageInput {
-    width: 80%;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 5px;
-    border: 2px solid #ddd;
-    background: #333;
-    color: white;
-    font-size: 16px;
-}
-
-#sendButton {
-    width: 80%;
-    padding: 10px;
-    margin: 10px 0;
-    border: none;
-    border-radius: 5px;
-    background-color: #2575fc;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-#sendButton:hover {
-    background-color: #6a11cb;
-}
-
-/* Search container */
-#searchContainer {
-    margin-top: 20px;
-}
-
-#searchFriend {
-    padding: 12px;
-    width: 80%;
-    margin: 10px 0;
-    border-radius: 5px;
-    border: 2px solid #ddd;
-    background: #333;
-    color: white;
-    font-size: 16px;
-}
-
-#searchButton {
-    width: 80%;
-    padding: 12px;
-    margin: 10px 0;
-    border: none;
-    border-radius: 5px;
-    background-color: #2575fc;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-#searchButton:hover {
-    background-color: #6a11cb;
-}
-
-/* Hidden class */
 .hidden {
     display: none;
+}
+
+input {
+    padding: 10px;
+    margin-top: 10px;
+    width: 80%;
+    border-radius: 5px;
+}
+
+#friendResults, #friendRequests {
+    margin-top: 20px;
 }
